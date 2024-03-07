@@ -12,11 +12,11 @@ const Quiz = () => {
     setSelectedOption(option);
   };
 
-  const handleQuizSubmission = () => {
+  const handleQuizSubmission = (e) => {
     const currentQuestion = questions[currentQuestionIndex];
     if (selectedOption === currentQuestion.correct) {
       setFeedback("Correct!");
-      setScore(score + 1); // varOcg
+      setScore(score + 1);
     } else {
       setFeedback(
         "Incorrect. The correct answer is " + currentQuestion.correct
