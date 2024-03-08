@@ -39,7 +39,7 @@ const Quiz = () => {
   return (
     <div className="container">
       <div id="question">
-        <h1>{questions[currentQuestionIndex].question}</h1>
+        <h2>{questions[currentQuestionIndex].question}</h2>
       </div>
       <div className="sub-container">
         {questions[currentQuestionIndex].options.map((option, index) => (
